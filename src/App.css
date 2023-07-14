@@ -1,0 +1,331 @@
+* {
+  box-sizing: border-box;
+
+}
+
+body {
+  margin: 0;
+  /* min-height: 100vh; */
+  display: abslute;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  background-color: rgb(0, 0, 33);
+  
+}
+
+.navbar {
+  
+  display: flex;
+  justify-content: center;
+  /* margin-bottom: 10px;   */
+  border-radius: 20px;
+  
+}
+
+
+/* Style The Dropdown Button */
+.dropbtn {
+  width: 100%;
+  margin-top: 9px;
+  margin-bottom: 1px;
+
+  /* box-shadow: 0px 0px 8px 2px #ffefaf; */
+  background-color:rgb(0, 0, 33);
+  /* color: white; */
+ 
+  font-size: 22px;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: contents;  
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+
+  z-index: 1;
+  
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: rgb(0, 0, 0);
+  padding: auto;
+  text-decoration: none;
+  display: flexbox;  
+  
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  /* background-color: #000000; */
+  color: rgb(241, 83, 10);
+  border-radius: 50%;  
+  
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: -webkit-flex;
+  
+  margin-top: 15px;
+  font-family:Arial, Helvetica, sans-serif;
+  
+  
+ 
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  /* background-color:rgb(5, 5, 5); */
+  /* box-shadow: 0px 0px 333px #effe4b; */
+  transform: rotate(180deg);  
+}
+
+
+
+
+
+.card--image {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  border-radius: 100px;
+  /* box-shadow: 0px 0px 9px 3px #bfbfbf; */
+  
+}
+
+.card--image:hover {
+  
+  transform: rotateZ(180deg);
+  transition: 1.5s;
+  
+  
+}
+
+
+.card--stats {
+  display: flex;
+  /* align-items: center; */
+  
+}
+
+.card--star {
+  height: 14px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  color: #c2c2c2;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+  margin-top: 6vh;
+  margin-left: 8vh;
+  margin-right: 8vh;
+  flex-wrap: wrap;
+  gap: 40px;
+  position: relative;
+}
+
+/* .card--badge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 3px;
+  font-weight: bold;
+  cursor:crosshair; 
+  box-shadow: 5px 4px 33px 5px rgba(215, 215, 215, 0.75);
+} */
+.hero {
+  background-color: rgb(16, 13, 7);
+  
+}
+
+.hero--header{
+  color: rgb(255, 93, 29);
+  padding-top: 1%;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.hero--text {
+  color: #dcf2fa;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-bottom: 2%;
+  justify-items: baseline;
+
+}
+.hero--text > h2 {
+  color: #cb00be;
+  background-color: #eeffd8;
+  padding-left: 2%;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #fd8cf5;
+  
+}
+
+.footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: auto;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3px;
+}
+
+.social-media {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: #e0e0e0;
+}
+
+.social-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.links {
+  display: flex;
+  gap: 10px;
+}
+
+.link {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #666;
+}
+
+ /* ----------- spinner style ------------ */
+.spinner {
+  width: 44px;
+  height: 44px;
+  animation: spinner-y0fdc1 2s infinite ease;
+  transform-style: preserve-3d;
+  margin:auto;
+  
+ }
+ 
+ .spinner > div {
+  background-color: rgba(0,77,255,0.2);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  border: 2px solid #004dff;
+  
+ }
+ 
+ .spinner div:nth-of-type(1) {
+  transform: translateZ(-22px) rotateY(180deg);
+ }
+ 
+ .spinner div:nth-of-type(2) {
+  transform: rotateY(-270deg) translateX(50%);
+  transform-origin: top right;
+ }
+ 
+ .spinner div:nth-of-type(3) {
+  transform: rotateY(270deg) translateX(-50%);
+  transform-origin: center left;
+ }
+ 
+ .spinner div:nth-of-type(4) {
+  transform: rotateX(90deg) translateY(-50%);
+  transform-origin: top center;
+ }
+ 
+ .spinner div:nth-of-type(5) {
+  transform: rotateX(-90deg) translateY(50%);
+  transform-origin: bottom center;
+ }
+ 
+ .spinner div:nth-of-type(6) {
+  transform: translateZ(22px);
+ }
+ 
+ @keyframes spinner-y0fdc1 {
+  0% {
+   transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+  }
+ 
+  50% {
+   transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+  }
+ 
+  100% {
+   transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+  }
+ }
+
+
+
+ .form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;  
+}
+
+.form--input {
+  display: flex;
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  border: 1px solid #D5D4D8;
+  text-indent: 5px;
+  /* margin: 5px; */
+  /* padding: 1rem; */
+  width: 100%;  
+}
+
+.form--button {
+  grid-column: 1 / -1;
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 3px;
+  /* padding: 1px; */
+  width: 100%;
+}
+
+.meme--image {
+  max-width: 100%;
+  height: 700px;
+  display: flex;
+  margin: auto;
+}
