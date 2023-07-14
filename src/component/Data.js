@@ -97,7 +97,7 @@ export default [
         title: "FuadModaresiRad",
         description: "Then for the first time you look around and the beauty of nature is revealed!",
         price: "3",
-        coverImg: "../images/08.png",
+        coverImg: "logo192.png",
         stats: {
             rating: 3.2,
             reviewCount: 6
